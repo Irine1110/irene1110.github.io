@@ -1,90 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta charset="UTF-8">
+  <title>WCB cafe - CONTACT</title>
+  <meta name="description" content="ブレンドコーヒーとヘルシーなオーガニックフードを提供するカフェ">
+
+  <!-- --------OGP設定-------- -->
+  <!-- webページのURL -->
+  <meta property="og:url" content="http://example.com/index.html">
+  <!-- ページの種類（website or article） -->
+  <meta property="og:type" content="website">
+  <!-- webページのタイトル -->
+  <meta property="og:title" content="WCB Cafe Home">
+  <!-- webページの説明文 -->
+  <meta property="og:description" content="おしゃれなカフェで癒やされてみませんか?無添加の食材で体の中からリフレッシュ。">
+  <!-- シェアされたときに表示させたい画像のファイルパス -->
+  <meta property="og:image" content="http://example.com/images/ogp.jpg">
+
+  <!-- --------css-------- -->
+<!-- ress.css -->
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+<!-- css -->
+<link href="./css/style.css" rel="stylesheet">
+<!-- favicon -->
+<link rel="icon" type="image/png" href="./images/favicon.png">
+<!-- viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
+  <div id="contact" class="big-bg">
+    <header class="page-header wrapper">
+        <h1><a href="./index.html"><img class="logo" src="./images/logo.svg" alt="WCB CAFEホーム"></a></h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="./news.html">NEWS</a></li>
+            <li><a href="./menu.html">MENU</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="wrapper">
+        <h2 class="page-title">Contact</h2>
+        <form action="#">
+          <div>
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="your-name">
+          </div>
+          <div>
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="your-email">
+          </div>
+          <div>
+            <label for="message">メッセージ</label>
+            <textarea id="message" name="your-message"></textarea>
+          </div>
+          <input type="submit" class="button" value="送信">
+        </form>
       </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
   </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+
+  <section id="location">
+    <div class="wrapper">
+      <div class="location-info">
+        <h3 class="sub-title">カフェ 東駅前店</h3>
+        <p>住所： 東京都〇〇区<br>
+          〇〇〇〇〇〇〇 000-22-1<br>
+          〇〇〇〇<br>
+          電話： 03-1111-1111<br>
+          営業時間： 10:00〜20:00<br>
+          休日：水曜</p>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+
+        <div class="location-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619.992141282119!2d139.74454125103634!3d35.702004389456945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c451c51b037%3A0xb10a235cf77c24d0!2z44K_44Oq44O844K644Kz44O844OS44O8IOmjr-eUsOapi-adseWPo-W6lw!5e0!3m2!1sja!2sjp!4v1625823906046!5m2!1sja!2sjp" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
-        </div>
-      </div>
-      <div class="clear"></div>
     </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
+  </section>
+
+  <section id="sns">
+    <div class="wrapper">
+      <div class="sns-box">
+        <h3 class="sub-title">Facebook</h3>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=315&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div><!-- sns-box -->
+
+      <div class="sns-box">
+        <h3 class="sub-title">Twitter</h3>
+        <a class="twitter-timeline" data-height="315" data-theme="light" href="https://twitter.com/Stray_Kids_JP?ref_src=twsrc%5Etfw">Tweets by Stray_Kids_JP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div><!-- sns-box -->
+
+      <div class="sns-box">
+        <h3 class="sub-title">Youtube</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/M7lIml8-eHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div><!-- sns-box -->
+
+    </div><!-- wrapper -->
+  </section>
+
   <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
+    <div class="wrapper">
+      <p><small>&copy; 2019 Manabox</small></p>
     </div>
   </footer>
+
 </body>
 </html>
